@@ -58,12 +58,22 @@ namespace ConsoleApp2
             {
                 for (int j = 0; j < matrix2.GetLength(1); j++)
                 {
-                    Console.WriteLine(matrix2[i, j]);
+                    //Console.WriteLine($"{i},{j} = {matrix2[i, j]}");
+                    Console.Write(matrix2[i, j] + " ");
                 }
+                Console.WriteLine();
 
             }
 
             Console.WriteLine(matrix2[3, 2]);
+
+            int[] arr3;
+            CreateArray(out arr3);
+        }
+
+        private static void CreateArray(out int[] arr3)
+        {
+            arr3 = new int[10];
         }
 
         private static void ModifyFirst(int[] arr)
